@@ -1,0 +1,45 @@
+.toolbar {
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    padding: 1rem;
+}
+
+.toolbar_navigation-itens ul {
+    list-style: none;
+    list-style-type: none;
+    width: fit-content;
+    float: left;
+}
+
+.toolbar_navigation-itens li {
+    float: left;
+    border-radius: 0.6rem;
+}
+
+.toolbar_navigation-itens a {
+    color: var(--color-light-nav);
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.toolbar_navigation-itens a:hover {
+    color: var(--color-dark-nav);
+}
+
+.social-media ul {
+    float: right;
+    list-style: none;
+}
+
+.social-media li {
+    float: right;
+}
+
+.social-media img {
+    width: 2rem;
+}
