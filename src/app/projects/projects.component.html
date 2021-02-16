@@ -1,0 +1,22 @@
+<div class="projects">
+    <div class="container" *ngFor="let repo of projects">
+        <a  target="_blank" rel="noreferrer" href="{{repo.html_url}}" >
+            <h2>{{ repo.name }}</h2>
+            <p *ngIf="repo.description">{{ repo.description }}</p>
+            <div>
+                <span class="button">
+                    <mat-icon>star_border</mat-icon>
+                    {{ repo.stargazers_count > 0 ? repo.stargazers_count : '' }}
+                </span>
+                <span class="button">
+                    <mat-icon>visibility</mat-icon>
+                    {{ repo.watchers_count > 0 ? repo.watchers_count : '' }}
+                </span>
+                <span class="button">
+                    <mat-icon>call_split</mat-icon>
+                    {{ repo.forks > 0 ? repo.forks : '' }}
+                </span>
+            </div>
+        </a>
+    </div>
+</div>
